@@ -1,57 +1,71 @@
 @import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600&family=Bodoni+Moda&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-.main-header {
-  background-color: #aaaeff;
-  height: 4.5rem;
+.top-wrapper{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  height: 5%;
+
 }
 
-.logo-text {
-  border: 2px solid black;
+
+.logo-container{
+  display: flex;
+  align-items: center;
   font-size: 30px;
-  line-height: 39px;
-  font-weight: 500;
-  color: black;
-  font-family: "Barlow Condensed", sans-serif;
-  margin: 10px;
-  padding: 0px 10px;
-  user-select: none;
+  font-weight: 700;
+  font-family: 'Lobster Two', cursive;
+  margin-left: 15px;
+}
+
+.logo{
+  height: 4.2rem;
+  width: 4.5rem;
 }
 
 .navbar {
+  position: relative;
   background-image: radial-gradient(
-    circle 311px at 8.6% 27.9%,
-    rgba(62, 147, 252, 0.57) 12.9%,
+    circle 911px at 8.6% 27.9%,
+    rgba(123, 182, 255, 0.44) 12.9%,
     rgba(239, 183, 192, 0.44) 91.2%
   );
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-weight: 500;
-  width: 100%;
+  font-weight: 100;
+  width: 75vw;
   height: 100%;
-  padding: 5px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.215);
+  box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.31);
+  border-radius: 20px;
 }
 
 .navlist {
   display: flex;
   align-items: center;
   list-style: none;
-  margin: 15px;
 }
 
 .listitem {
-  font-size: 20px;
+  font-size: 24px;
   border: 1px solid #000;
-  font-family: "Barlow Condensed", sans-serif;
+  font-family: 'Barlow Condensed', sans-serif;
   font-weight: 500;
   cursor: pointer;
   transition: all 0.3s ease;
   position: relative;
-  padding: 4px;
   margin: 30px;
   border-radius: 3px;
+}
+
+.listitem-logo{
+  padding:10px;
+  margin-left: 10px;
+  margin-right: 5px;
 }
 
 .listitem {
@@ -126,8 +140,8 @@
 }
 
 .navlogo {
-  height: 30px;
-  width: 30px;
+  height: 50px;
+  width: 50px;
   margin: 10px;
   top: 1px;
   position: relative;
@@ -135,21 +149,19 @@
 }
 
 .gh-logo {
-  height: 35px;
-  width: 35px;
+  height: 2.5rem;
+  width: 2.5rem;
 }
 
 .lk-logo {
-  height: 35px;
-  width: 37px;
+  height: 2.5rem;
+  width: 2.5rem;
 }
 
 .gm-logo {
-  height: 35px;
-  width: 37px;
-  margin: 10px;
+  height: 2.3rem;
+  width: 2.3rem;
   position: relative;
-  transition: all 0.2s ease;
 }
 
 .navlogo:hover {

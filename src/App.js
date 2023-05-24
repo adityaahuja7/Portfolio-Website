@@ -6,6 +6,7 @@ function App() {
   return (
     <div className="App">
       <Navbar />
+      <div class = "bg-person-wrapper"><span id = "cons">UNDER CONSTRUCTION</span><img src = {require("./Components/Icons/tony.png")} class="bg-person" /></div>
     </div>
   );
 }
