@@ -1,48 +1,39 @@
 @import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600&family=Bodoni+Moda&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
-.top-wrapper{
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  margin: 10px;
-  height: 5%;
-
-}
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
 
 
-.logo-container{
-  display: flex;
-  align-items: center;
-  font-size: 30px;
-  font-weight: 700;
-  font-family: 'Lobster Two', cursive;
-  margin-left: 15px;
-}
 
-.logo{
-  height: 4.2rem;
-  width: 4.5rem;
-}
 
 .navbar {
-  position: relative;
-  background-image: radial-gradient(
-    circle 911px at 8.6% 27.9%,
-    rgba(123, 182, 255, 0.44) 12.9%,
-    rgba(239, 183, 192, 0.44) 91.2%
-  );
+  background:rgba(254, 189, 115, 0.364) ;
   display: flex;
+  margin: 1rem;
   justify-content: space-between;
   align-items: center;
-  font-weight: 100;
-  width: 75vw;
+  width: 60%;
   height: 100%;
   box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.31);
   border-radius: 20px;
 }
+
+.logo-container {
+  color:black;
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: "Lobster Two", cursive;
+  margin-left: 15px;
+}
+
+.logo {
+  height: 4.2rem;
+  width: 4.5rem;
+}
+
 
 .navlist {
   display: flex;
@@ -51,10 +42,11 @@
 }
 
 .listitem {
-  font-size: 24px;
+  color:black;
+  font-size: 18px;
   border: 1px solid #000;
-  font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 500;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
   cursor: pointer;
   transition: all 0.3s ease;
   position: relative;
@@ -62,8 +54,8 @@
   border-radius: 3px;
 }
 
-.listitem-logo{
-  padding:10px;
+.listitem-logo {
+  padding: 10px;
   margin-left: 10px;
   margin-right: 5px;
 }
@@ -73,10 +65,9 @@
   padding: 0px;
 }
 .listitem:hover {
-  transform: translate(0px, -2px);
+  transform: translate(0px, -4px);
   background: transparent;
-  color: #000;
-  box-shadow: 0px 1px 10px rgb(236, 151, 255);
+  color: #000000;
 }
 .listitem span {
   position: relative;
@@ -92,7 +83,7 @@
   left: 0;
   top: 0;
   background: #000;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
 }
 .listitem:before {
   transform: translate(0, 5);
@@ -134,7 +125,6 @@
 }
 
 .listitem:active {
-  box-shadow: 0px 1px 25px rgb(236, 151, 255);
   transform: translate(0, 0);
   user-select: none;
 }
@@ -166,7 +156,7 @@
 
 .navlogo:hover {
   cursor: pointer;
-  transform: translate(0px, -2px);
+  transform: translate(0px, -3px);
 }
 
 .navlogo:active {
