@@ -1,20 +1,21 @@
 import Navbar from "../Components/Navbar.js";
+import DarkMode from "../Components/DarkMode.js";
 import "../Components/Navbar.css";
 import "../Styles/App.css";
-import { NextUIProvider } from "@nextui-org/react";
-import { Card, Text } from "@nextui-org/react";
-
-
+import { ThemeProvider } from "next-themes";
 
 function App() {
   return (
-    <NextUIProvider>
-      <div className="root-container">
-        <div class="header-container">
+    <ThemeProvider enableSystem={true} attribute="class">
+      <div className="root-container bg-primary dark:bg-darkModeprimary transition-all duration-300">
+        <div className="header-container">
           <Navbar />
         </div>
+        <div className="dark-mode-container absolute bottom-10 right-10">
+          <DarkMode />
+        </div>
       </div>
-    </NextUIProvider>
+    </ThemeProvider>
   );
 }
 

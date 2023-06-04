@@ -4,11 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
 
-
-
-
 .navbar {
-  background:rgba(254, 189, 115, 0.364) ;
   display: flex;
   margin: 1rem;
   justify-content: space-between;
@@ -20,7 +16,7 @@
 }
 
 .logo-container {
-  color:black;
+  color: black;
   display: flex;
   align-items: center;
   font-size: 2rem;
@@ -32,8 +28,12 @@
 .logo {
   height: 4.2rem;
   width: 4.5rem;
+  margin-right: 0.5rem;
 }
 
+.switcher {
+  border: 1px solid black;
+}
 
 .navlist {
   display: flex;
@@ -42,16 +42,16 @@
 }
 
 .listitem {
-  color:black;
+  color: black;
   font-size: 18px;
-  border: 1px solid #000;
+  border: 2px solid #000;
   font-family: "Inter", sans-serif;
   font-weight: 700;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
   position: relative;
   margin: 30px;
-  border-radius: 3px;
+  border-radius: 5px;
 }
 
 .listitem-logo {
@@ -60,12 +60,12 @@
   margin-right: 5px;
 }
 
-.listitem {
+/* .listitem {
   line-height: 30px;
   padding: 0px;
-}
+} */
 .listitem:hover {
-  transform: translate(0px, -4px);
+  transform: translate(0px, -2px);
   background: transparent;
   color: #000000;
 }
@@ -130,10 +130,7 @@
 }
 
 .navlogo {
-  height: 50px;
-  width: 50px;
-  margin: 10px;
-  top: 1px;
+  margin: 1rem;
   position: relative;
   transition: all 0.2s ease;
 }
@@ -151,7 +148,6 @@
 .gm-logo {
   height: 2.3rem;
   width: 2.3rem;
-  position: relative;
 }
 
 .navlogo:hover {
