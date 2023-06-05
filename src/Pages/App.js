@@ -1,13 +1,13 @@
 import Navbar from "../Components/Navbar.js";
 import DarkMode from "../Components/DarkMode.js";
-import "../Components/Navbar.css";
+import "../Styles/Navbar.css";
 import "../Styles/App.css";
 import { ThemeProvider } from "next-themes";
 
 function App() {
   return (
     <ThemeProvider enableSystem={true} attribute="class">
-      <div className="root-container bg-primary dark:bg-darkModeprimary transition-all duration-300">
+      <div className="root-container bg-blobLight dark:bg-blobDark transition-all delay-100 duration-200 linear">
         <div className="header-container">
           <Navbar />
         </div>

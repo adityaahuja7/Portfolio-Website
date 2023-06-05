@@ -1,9 +1,8 @@
 import React from "react";
 
-
 const Navbar = () => {
   return (
-    <nav className="navbar select-none bg-rose-300 dark:bg-green-300 dark:shadow dark:shadow-inherit dark:shadow-300 transition-all duration-200">
+    <nav className="navbar select-none shadow drop-shadow-md bg-rose-300 dark:bg-green-300 dark:shadow dark:shadow-stone-700 dark:shadow-200 transition-all delay-100 duration-500">
       <div className="logo-container">
         <img src={require("./Icons/logo-steel.png")} className="logo" /> Aditya
         Ahuja

@@ -9,15 +9,17 @@
 }
 
 .root-container {
+  background-size: 100%;
   height: 100vh;
   width: 100vw;
 }
 
 .header-container {
+  position: relative;
   width: 100%;
   height: 6rem;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 

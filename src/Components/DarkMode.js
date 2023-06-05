@@ -5,8 +5,8 @@ import { useState, useEffect } from "react";
 const DarkMode = () => {
   const paths = {
     light: require("./Icons/lightmode.png"),
-    dark: require("./Icons/darkmode.png")
-  }
+    dark: require("./Icons/darkmode.png"),
+  };
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
@@ -29,8 +29,12 @@ const DarkMode = () => {
   };
 
   return (
-    <div className="dark-button rounded-md w-12 h-12 border-2 border-slate-950 p-1 dark:border-orange-200   " role="button" onClick={themeChanger}>
-      <img src = {theme === "dark"? paths.light:paths.dark}></img>
+    <div
+      className="dark-button rounded-md w-12 h-12 border-2 border-slate-950 p-1 dark:border-orange-200 transition-all duration-200"
+      role="button"
+      onClick={themeChanger}
+    >
+      <img src={theme === "dark" ? paths.light : paths.dark}></img>
     </div>
   );
 };
