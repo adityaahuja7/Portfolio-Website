@@ -1,0 +1,21 @@
+.card {
+    transition: all 400ms;
+    border-radius: 1rem;
+  }
+  
+  .movelefthigh{
+    transform: translate(-36rem, 0);
+  }
+  
+  .moveleftlow{
+    transform: translate(-12rem, 0);
+  }
+  
+  .moverighthigh{
+    transform: translate(12rem, 0);
+  }
+  
+  .moverightlow{
+    transform: translate(36rem, 0);
+  }
+  

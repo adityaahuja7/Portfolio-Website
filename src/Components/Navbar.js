@@ -4,8 +4,8 @@ const Navbar = () => {
   return (
     <nav className="navbar select-none shadow drop-shadow-md bg-rose-300 dark:bg-green-300 dark:shadow dark:shadow-stone-700 dark:shadow-200 transition-all delay-100 duration-500">
       <div className="logo-container">
-        <img src={require("./Icons/logo-steel.png")} className="logo" /> Aditya
-        Ahuja
+        <img src={require("../Icons/PortfolioLogo.png")} className="logo" />{" "}
+        Aditya Ahuja
       </div>
 
       <ul className="navlist navbar-right">

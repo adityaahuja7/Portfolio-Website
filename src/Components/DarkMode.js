@@ -4,8 +4,8 @@ import { useState, useEffect } from "react";
 
 const DarkMode = () => {
   const paths = {
-    light: require("./Icons/lightmode.png"),
-    dark: require("./Icons/darkmode.png"),
+    light: require("../Icons/lightmode.png"),
+    dark: require("../Icons/darkmode.png"),
   };
   const [mounted, setMounted] = useState(false);
 
