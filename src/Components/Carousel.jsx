@@ -1,20 +1,33 @@
 import React from "react";
 import { useState } from "react";
-import Swiper, { Navigation, Pagination } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
+import TiltCard from "../Components/TiltCard.jsx";
+import { Navigation, Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import "swiper/css/effect-coverflow";
 
-const swiper = new Swiper(".swiper", {
-  direction: "horizontal",
-  loop: true,
+const Carousel = ({ content }) => {
+  return (
+    <Swiper
+      modules={[Navigation,Pagination]}
+      effect={"coverflow"}
+      grabCursor
+      pagination
+      loop
+      centeredSlides
+      className="greeting-wrapper"
+    >
+      {content.map((i) => {
+        return (
+          <SwiperSlide className="greeting-slides">
+            <TiltCard text={i} />
+          </SwiperSlide>
+        );
+      })}
+    </Swiper>
+  );
+};
 
-  pagination: {
-    el: ".swiper-pagination",
-  },
-
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
+export default Carousel;

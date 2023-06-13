@@ -1,13 +1,12 @@
 import Navbar from "../Components/Navbar.js";
 import DarkMode from "../Components/DarkMode.js";
 import TiltCard from "../Components/TiltCard.jsx";
+import Carousel from "../Components/Carousel.jsx";
 import "../Styles/Navbar.css";
 import "../Styles/Home.css";
 import { ThemeProvider } from "next-themes";
 
-const Text1 = () => {
-  return <span class="wave">👋🏾</span>;
-};
+const Text1 = ["Hello","Babe","Nigga"];
 
 function App() {
   return (
@@ -20,7 +19,7 @@ function App() {
           <DarkMode />
         </div>
         <div className="ProjectContainer hover:cursor-pointer absolute left-1/2 top-1/2">
-          <TiltCard text={<Text1/>} />
+          <Carousel content = {Text1} />
         </div>
       </div>
     </ThemeProvider>
