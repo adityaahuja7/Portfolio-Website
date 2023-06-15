@@ -1,31 +1,29 @@
 import React from "react";
 import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import TiltCard from "../Components/TiltCard.jsx";
-import { Navigation, Pagination } from "swiper";
+import { EffectCards, Pagination, Autoplay } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
+import "swiper/css/effect-cards";
 import "swiper/css/pagination";
-import "swiper/css/effect-coverflow";
 
 const Carousel = ({ content }) => {
   return (
     <Swiper
-      modules={[Navigation,Pagination]}
-      effect={"coverflow"}
-      grabCursor
-      pagination
-      loop
-      centeredSlides
+      effect={"cards"}
+      grabCursor={true}
+      pagination={true}
+      modules={[EffectCards, Pagination, Autoplay]}
+      autoplay={{
+        delay: 3400,
+        disableOnInteraction : true,
+      }}
       className="greeting-wrapper"
     >
       {content.map((i) => {
-        return (
-          <SwiperSlide className="greeting-slides">
-            <TiltCard text={i} />
-          </SwiperSlide>
-        );
+        return <SwiperSlide className="dark:text-purple-800">{i}</SwiperSlide>;
       })}
+      <div className="swiper-pagination"></div>
     </Swiper>
   );
 };

@@ -7,6 +7,7 @@ module.exports = {
       backgroundImage:{
         blobLight: "url(../SVGs/blob-light.svg)",
         blobDark: "url(../SVGs/blob-dark.svg)",
+        wavesLightCard :"url(../SVGs/waves-light-card.svg)", 
       },
       colors: {
         primary: "#98A8F8",
