@@ -5,14 +5,14 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage:{
-        blobLight: "url(../SVGs/blob-light.svg)",
-        blobDark: "url(../SVGs/blob-dark.svg)",
-        wavesLightCard :"url(../SVGs/waves-light-card.svg)", 
+        backgroundLight: "url(../SVGs/blob-light.svg)",
+        backgroundDark: "url(../SVGs/blob-dark.svg)", 
       },
       colors: {
-        primary: "#98A8F8",
-        darkModeprimary: "#06283D",
-        antiquewhite:"rgb(255, 228, 193)",
+        primary1 : "#2D2727",
+        primary2 : "#413543",
+        accent1: "#8F43EE",
+        accent2 : "#F0EB8D"
       },
       aspectRatio:{
         "7/10": "7 / 10",

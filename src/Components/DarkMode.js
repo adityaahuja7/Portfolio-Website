@@ -18,8 +18,7 @@ const DarkMode = () => {
 
   const themeChanger = () => {
     if (!mounted) return null;
-    const currentTheme = theme === "system" ? systemTheme : theme;
-
+    const currentTheme = (theme === "system") ? systemTheme : theme;
     if (currentTheme === "dark") {
       setTheme("light");
     } else {
