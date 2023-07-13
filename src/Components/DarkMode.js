@@ -14,7 +14,6 @@ const DarkMode = () => {
   }, []);
 
   const { systemTheme, theme, setTheme } = useTheme();
-  console.log(systemTheme);
 
   const themeChanger = () => {
     if (!mounted) return null;

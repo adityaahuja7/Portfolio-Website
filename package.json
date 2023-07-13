@@ -17,6 +17,7 @@
     "react-scripts": "5.0.1",
     "react-svg": "^16.1.13",
     "react-tilt": "^1.0.2",
+    "serve": "^14.2.0",
     "swiper": "^9.4.1",
     "use-dark-mode": "^2.3.1",
     "web-vitals": "^2.1.4"
