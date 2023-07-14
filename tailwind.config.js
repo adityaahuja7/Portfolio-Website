@@ -4,17 +4,21 @@ module.exports = {
   darkMode: "class",
   theme: {
     extend: {
-      backgroundImage:{
+      backgroundImage: {
         backgroundLight: "url(../SVGs/blob-light.svg)",
-        backgroundDark: "url(../SVGs/blob-dark.svg)", 
+        backgroundDark: "url(../SVGs/blob-dark.svg)",
       },
       colors: {
-        primary1 : "#2D2727",
-        primary2 : "#413543",
-        accent1: "#8F43EE",
-        accent2 : "#F0EB8D"
+        primary: {
+          background1: "#FFFBE9",
+          background2 : "#393E46",
+        },
+        secondary:{
+          navbar1: "#E3CAA5",
+          navbar2: "#FFD369",
+        }
       },
-      aspectRatio:{
+      aspectRatio: {
         "7/10": "7 / 10",
       },
     },

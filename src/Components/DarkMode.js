@@ -1,6 +1,7 @@
 import React from "react";
 import { useTheme } from "next-themes";
 import { useState, useEffect } from "react";
+import { motion} from "framer-motion";
 
 const DarkMode = () => {
   const paths = {
@@ -15,9 +16,9 @@ const DarkMode = () => {
 
   const { systemTheme, theme, setTheme } = useTheme();
 
-  const themeChanger = () => {
+  const themeChanger = (e) => {
     if (!mounted) return null;
-    const currentTheme = (theme === "system") ? systemTheme : theme;
+    const currentTheme = theme === "system" ? systemTheme : theme;
     if (currentTheme === "dark") {
       setTheme("light");
     } else {
@@ -27,13 +28,14 @@ const DarkMode = () => {
   };
 
   return (
-    <div
-      className="dark-button rounded-md w-12 h-12 border-2 border-slate-950 p-1 dark:border-orange-200 transition-all duration-200"
+    <motion.div
+      className="dark-button w-12 h-12 select-none"
+      whileTap={{rotate: -180}}
       role="button"
       onClick={themeChanger}
     >
-      <img src={theme === "dark" ? paths.light : paths.dark}></img>
-    </div>
+      <motion.img src={theme === "dark" ? paths.light : paths.dark} onClick={themeChanger}></motion.img>
+    </motion.div>
   );
 };
 

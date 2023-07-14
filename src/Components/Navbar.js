@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <nav className="navbar select-none shadow drop-shadow-md bg-accent1 dark:bg-accent2 dark:shadow-stone-700 dark:shadow-200">
-      <div className="logo-container  pl-6">Aditya Ahuja</div>
+    <nav className="navbar select-none shadow drop-shadow-md bg-secondary-navbar1 dark:bg-secondary-navbar2">
+      <div className="logo-container">Aditya Ahuja</div>
 
       <ul className="navlist navbar-right">
         <li className="listitem ">
