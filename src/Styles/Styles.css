@@ -2,56 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
-  margin: 0;
-  padding: 0;
-}
-
-body{
-  overflow: hidden;
-}
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap");
 
 .root-container {
-  height: 100vh;
-  width: 100vw;
+  max-width: 100vw;
+  max-height: 100vh;
 }
 
-.header-container {
-  position: relative;
-  height: 6rem;
-  display: flex;
-  justify-content: center;
-}
-
-.greeting-container {
-  width: 18%;
-  height: 45%;
-  translate: -50% -50%;
-}
-
-.greeting-wrapper {
-  height: 100%;
+.home-container {
   width: 100%;
+  height: 100%;
+  transition: background linear 1ms;
 }
 
-.swiper-slide {
-  background-size: cover;
-  border-radius: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  padding-top: 2rem;
+.project-container {
+  width: 100%;
+  height: 100%;
+  transition: background linear 1ms;
 }
 
-.greeting-conent {
-  margin-top: 100rem !important;
-}
-
-
-.wave-emoji {
-  font-size: 4rem;
+#about {
+  font-family: "Comfortaa", sans-serif;
 }
 .wave {
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+.greet-emoji {
   animation-name: wave-animation;
   animation-duration: 2.5s;
   animation-iteration-count: infinite;
@@ -85,4 +67,3 @@ body{
     transform: rotate(0deg);
   }
 }
-

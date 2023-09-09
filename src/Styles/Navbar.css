@@ -3,34 +3,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
 
 .navbar {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-  height: 100%;
+  justify-content: center;
+  height: 5rem;
 }
 
 .logo-container {
   color: black;
-  display: flex;
-  align-items: center;
-  font-size: 2rem;
   font-weight: 700;
-  font-family: "Lobster Two", cursive;
-  margin-left: 15px;
+  font-family: 'Comfortaa', sans-serif;
+  margin-top: 0.2rem;
 }
 
-.logo {
-  height: 4.2rem;
-  width: 4.5rem;
-  margin-right: 0.5rem;
-}
-
-.switcher {
-  border: 1px solid black;
-}
 
 .navlist {
   display: flex;
@@ -40,104 +27,24 @@
 
 .listitem {
   color: black;
-  font-size: 18px;
-  border: 2px solid #000;
   font-family: "Inter", sans-serif;
   font-weight: 700;
   cursor: pointer;
+  line-height: 3rem;
   transition: all 0.3s ease;
-  position: relative;
-  margin: 30px;
-  border-radius: 5px;
 }
 
-.listitem-logo {
-  padding: 10px;
-  margin-left: 10px;
-  margin-right: 5px;
-}
-
-.listitem {
-  line-height: 30px;
-  padding: 0px;
+.listitem-active{
+  color: rgb(0, 255, 0);
 }
 
 .listitem:hover {
-  transform: translate(0px, -2px);
-  background: transparent;
-  color: #000000;
+  cursor: pointer;
 }
 
-.listitem span {
-  position: relative;
-  padding: 0.1px 20px;
-  display: block;
-  width: 100%;
-  height: 100%;
+.listitem-logo {
+  padding: 1rem;
 }
-
-.listitem:before,
-.listitem:after {
-  position: absolute;
-  content: "";
-  left: 0;
-  top: 0;
-  background: #000;
-  transition: all 0.3s ease;
-}
-
-.listitem:before {
-  transform: translate(0, 5);
-  height: 0%;
-  width: 1px;
-}
-
-.listitem:after {
-  width: 0%;
-  height: 1px;
-}
-
-.listitem:hover:before {
-  height: 100%;
-}
-
-.listitem:hover:after {
-  width: 100%;
-}
-
-.listitem span:before,
-.listitem span:after {
-  position: absolute;
-  content: "";
-  right: 0;
-  bottom: 0;
-  background: #000;
-  transition: all 0.3s ease;
-}
-
-.listitem span:before {
-  width: 1px;
-  height: 0%;
-}
-
-.listitem span:after {
-  width: 0%;
-  height: 1px;
-}
-
-.listitem span:hover:before {
-  height: 100%;
-}
-
-.listitem span:hover:after {
-  width: 100%;
-}
-
-.listitem:active {
-  transform: translate(0, 0);
-  user-select: none;
-}
-
 .navlogo {
   margin: 1rem;
   position: relative;
@@ -161,11 +68,6 @@
 
 .navlogo:hover {
   cursor: pointer;
-  transform: translate(0px, -3px);
+
 }
 
-.navlogo:active {
-  user-select: none;
-  cursor: pointer;
-  transform: translate(0px, 0px);
-}
